@@ -3,6 +3,7 @@ import { ArrowRight, Clock3, ShieldCheck, Sparkles, Trophy } from 'lucide-react'
 import { programs } from '../constants/data'
 import { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
+import { Link } from 'react-router-dom'
 import PageWrapper from '../components/PageWrapper'
 import Section from '../components/Section'
 import SEO from '../components/SEO'
@@ -41,12 +42,12 @@ const HomePage = () => {
               From metabolic conditioning to absolute strength cycles. Join Ahmedabad's most elite technical training facility.
             </p>
             <div className="mt-10 flex flex-wrap gap-5">
-              <a href="/pricing" className="btn-primary flex items-center gap-2">
+              <Link to="/pricing" className="btn-primary flex items-center gap-2">
                 Get Started <ArrowRight size={18} />
-              </a>
-              <a href="/programs" className="btn-outline">
+              </Link>
+              <Link to="/programs" className="btn-outline">
                 Explore Classes
-              </a>
+              </Link>
             </div>
           </motion.div>
 
@@ -95,7 +96,7 @@ const HomePage = () => {
               New Body Shape Gym is giving exclusive access to our peak performance labs at special rates. Valid for first 50 signups.
             </p>
           </div>
-          <a href="/contact" className="btn-primary px-8 md:px-12 py-4 md:py-6 text-sm md:text-lg whitespace-nowrap">Secure Your Spot</a>
+          <Link to="/contact" className="btn-primary px-8 md:px-12 py-4 md:py-6 text-sm md:text-lg whitespace-nowrap">Secure Your Spot</Link>
         </div>
         <div className="absolute -right-20 -top-20 h-96 w-96 rounded-full bg-amber-400/10 blur-[100px]" />
       </section>

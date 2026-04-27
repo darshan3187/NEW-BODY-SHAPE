@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { programs } from '../constants/data'
 import PageWrapper from '../components/PageWrapper'
 import Section from '../components/Section'
@@ -49,7 +50,7 @@ const ProgramsPage = () => {
             <p className="text-slate-400 max-w-xl mx-auto mb-10 text-lg">
                Our head coaches offer a free 15-minute consultation to find the right program for your specific body type and goals.
             </p>
-            <a href="/contact" className="btn-primary">Book Consultation</a>
+          <Link to="/contact" className="btn-primary">Book Consultation</Link>
          </div>
          <div className="absolute inset-0 bg-gradient-to-b from-amber-300/5 to-transparent pointer-events-none" />
       </section>
