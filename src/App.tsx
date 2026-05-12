@@ -28,7 +28,6 @@ function App() {
 
   return (
     <>
-      {/* Schema.org for SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
